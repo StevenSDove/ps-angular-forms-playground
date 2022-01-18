@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TimepickerComponent } from 'ngx-bootstrap/timepicker';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     HttpClientModule,
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    TimepickerComponent,
   ],
   declarations: [AppComponent, UserSettingsFormComponent],
   bootstrap: [AppComponent],
