@@ -22,6 +22,9 @@ export class UserSettingsFormComponent implements OnInit {
   singleModel = 'On';
   startDate: Date;
   startTime: Date;
+  userRating: number = 3;
+  maxRating: number = 10;
+  isReadonly: false;
 
   constructor(private dataService: DataService) {}
 
