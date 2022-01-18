@@ -33,6 +33,17 @@
       </label>
     </div>
 
+    <buton
+      type="button"
+      class="btn btn-primary"
+      [(ngModel)]="singleModel"
+      btnCheckbox
+      btnCheckboxTrue="1"
+      btnCheckboxFalse="0"
+    >
+      Single Toggle
+    </buton>
+
     <p>User Interface Style</p>
     <div class="form-group">
       <div class="form-check">
@@ -81,7 +92,9 @@
         name="subscriptionType"
         [(ngModel)]="userSettings.subscriptionType"
       >
-        <option *ngFor="let type of subscriptionTypes | async">{{ type }}</option>
+        <option *ngFor="let type of subscriptionTypes | async">
+          {{ type }}
+        </option>
       </select>
     </div>
 

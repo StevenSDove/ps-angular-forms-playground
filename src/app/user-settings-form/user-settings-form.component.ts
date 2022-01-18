@@ -19,6 +19,7 @@ export class UserSettingsFormComponent implements OnInit {
   };
   userSettings: UserSettings = { ...this.savedUserSettings };
   subscriptionTypes: Observable<string[]>;
+  singleModel = 'On';
 
   constructor(private dataService: DataService) {}
 
