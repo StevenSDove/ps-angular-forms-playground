@@ -9,6 +9,7 @@
         class="form-control"
         [(ngModel)]="userSettings.name"
         required
+        (blur)="onBlur(nameField)"
         #nameField="ngModel"
         [class.field-error]="form.submitted && nameField.invalid"
       />
