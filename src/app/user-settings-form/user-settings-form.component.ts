@@ -37,8 +37,7 @@ export class UserSettingsFormComponent implements OnInit {
     if (form.invalid) return;
 
     this.dataService.postUserSettingsForm(this.userSettings).subscribe({
-      next: (result) =>
-        console.log('success: ', result, JSON.stringify(result)),
+      next: (result) => console.log('success: ', result),
       error: (error) => console.log('error: ', error),
     });
   }
