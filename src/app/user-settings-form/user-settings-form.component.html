@@ -3,7 +3,12 @@
   <form #form="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
-      <input id="name" name="name" class="form-control" ngModel />
+      <input
+        id="name"
+        name="name"
+        class="form-control"
+        [(ngModel)]="userSettings.name"
+      />
     </div>
     <div class="form-check">
       <input
@@ -11,7 +16,7 @@
         type="checkbox"
         id="emailOffers"
         name="emailOffers"
-        ngModel
+        [(ngModel)]="userSettings.emailOffers"
       />
       <label class="form-check-label" for="emailOffers">
         Email Special Offers
@@ -28,7 +33,7 @@
           id="lightInterface"
           value="light"
           checked
-          ngModel
+          [(ngModel)]="userSettings.interfaceStyle"
         />
         <label class="form-check-label" for="lightInterface"> Light </label>
       </div>
@@ -40,7 +45,7 @@
           id="mediumInterface"
           value="medium"
           checked
-          ngModel
+          [(ngModel)]="userSettings.interfaceStyle"
         />
         <label class="form-check-label" for="mediumInterface"> Medium </label>
       </div>
@@ -52,7 +57,7 @@
           id="darkInterface"
           value="dark"
           checked
-          ngModel
+          [(ngModel)]="userSettings.interfaceStyle"
         />
         <label class="form-check-label" for="darkInterface"> Dark </label>
       </div>
@@ -64,7 +69,7 @@
         class="form-control"
         id="subscriptionType"
         name="subscriptionType"
-        ngModel
+        [(ngModel)]="userSettings.subscriptionType"
       >
         <option>Monthly</option>
         <option>Annual</option>
@@ -79,7 +84,7 @@
         id="notes"
         class="form-control"
         rows="3"
-        ngModel
+        [(ngModel)]="userSettings.notes"
       ></textarea>
     </div>
 
